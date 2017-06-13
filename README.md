@@ -14,10 +14,10 @@
     portinstall lang/python3 chinese/ibus-libpinyin
 
 ### Desktop Utilities
-    portinstall www/firefox
     portinstall devel/geany
     portinstall x11-fm/xfe
     portinstall graphics/mupdf
+    portinstall www/firefox
 
 ## 配置
 ### xterm
