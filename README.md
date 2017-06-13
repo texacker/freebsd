@@ -3,9 +3,9 @@
 ## 安装
 ### ports-mgmt
     portinstall ports-mgmt/pkg
-    portinstall ports-mgmt/pkg_cleanup
     portinstall ports-mgmt/portmaster
     portinstall ports-mgmt/portupgrade
+    portinstall ports-mgmt/pkg_cleanup
 
 ### xorg
     portinstall x11/xorg
