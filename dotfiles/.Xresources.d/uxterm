@@ -1,0 +1,81 @@
+!UXTerm.maximized:          true
+UXTerm.customization:       -color
+
+UXTerm.VT100.boldMode:      off
+UXTerm.VT100.boldColors:    off
+UXTerm.VT100.colorBDMode:   on
+UXTerm.VT100.colorULMode:   on
+!UXTerm.VT100.underLine:    off
+!UXTerm.VT100.italicULMode: on
+
+!! From http://ethanschoonover.com/solarized
+!!
+!! Color Schema:
+!!   <- BG Tones ->|<------- Content Tones --->|
+!!   base03 base02   base01 base00 base0 base1   base2 base3
+!!   b      bb                     w     bw
+!!   bg                     fg             
+!!
+
+#define S_orange        #cb4b16
+#define S_violet        #6c71c4
+
+#define S_red           #dc322f
+#define S_green         #859900
+#define S_yellow        #b58900
+#define S_blue          #268bd2
+#define S_magenta       #d33682
+#define S_cyan          #2aa198
+
+#define S_base03        #002b36
+#define S_base02        #073642
+
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+!UXTerm.fading:                      40
+!UXTerm.fadeColor:                   S_base03
+!UXTerm.VT100.cursorColor:           S_base1
+!UXTerm.VT100.pointerColorBackground:S_base01
+!UXTerm.VT100.pointerColorForeground:S_base1
+
+UXTerm.VT100.color0:                 S_base03
+UXTerm.VT100.color1:                 S_red
+UXTerm.VT100.color2:                 S_green
+UXTerm.VT100.color3:                 S_yellow
+UXTerm.VT100.color4:                 S_blue
+UXTerm.VT100.color5:                 S_magenta
+UXTerm.VT100.color6:                 S_cyan
+UXTerm.VT100.color7:                 S_base0
+
+UXTerm.VT100.color8:                 S_base02
+UXTerm.VT100.color9:                 S_red
+UXTerm.VT100.color10:                S_green
+UXTerm.VT100.color11:                S_yellow
+UXTerm.VT100.color12:                S_blue
+UXTerm.VT100.color13:                S_magenta
+UXTerm.VT100.color14:                S_cyan
+UXTerm.VT100.color15:                S_base1
+
+UXTerm.VT100.background:             S_base03
+UXTerm.VT100.foreground:             S_base00
+UXTerm.VT100.colorBD:                S_violet
+UXTerm.VT100.colorUL:                S_orange
+
+!! Bitmap Font:
+UXTerm.VT100.font:          -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+UXTerm.VT100.wideFont:      -misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1
+UXTerm.VT100.boldFont:      -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+UXTerm.VT100.wideBoldFont:  -misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1
+
+!! FreeType Font:
+!UXTerm*faceName:           monospace
+!UXTerm*faceNameDoublesize: monospace
+!UXTerm*faceSize:           10
+!UXTerm*cjkWidth:           true
+!UXTerm*locale:             zh_CN.UTF-8
