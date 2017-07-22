@@ -21,10 +21,10 @@ export XMODIFIERS='@im=ibus'
 #export XIM_PROGRAM="ibus-daemon"
 #export XIM_ARGS="--daemonize --xim"
 
-## In other WM: dwm
+## In other WM: openbox, dwm
 exec /usr/local/bin/ibus-daemon --daemonize --xim --replace &
 
-## Status bar
+## Status bar (in dwm)
 #while true; do
 #  xsetroot -name "$(date "+%m-%d %u %R")"
 #  sleep 15
@@ -32,10 +32,10 @@ exec /usr/local/bin/ibus-daemon --daemonize --xim --replace &
 
 xset fp= /usr/local/share/fonts/misc/
 #xset fp+ /usr/local/share/fonts/TTF/
-#xset fp= /usr/local/share/fonts/TTF/
 xset fp rehash
 xset b off
 
+## Launch WM
 #exec /usr/local/bin/gnome-session
 #exec ck-launch-session gnome-session
 #exec /usr/local/bin/mate-session
