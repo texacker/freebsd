@@ -14,9 +14,9 @@ portinstall ports-mgmt/pkg_cleanup
 
 ### xorg
     portinstall x11/xorg
-    portinstall x11-themes/lxappearance x11-wm/obconf x11-wm/obmenu
-    portinstall devel/py-xdg x11/tint
-    portinstall lang/python3 chinese/ibus-libpinyin
+    portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
+    portinstall x11/tint devel/py-xdg
+    portinstall chinese/ibus-libpinyin lang/python3
 
 ### Desktop Utilities
     portinstall devel/geany
