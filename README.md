@@ -40,6 +40,17 @@ portinstall ports-mgmt/pkg_cleanup
 > 而应用程序不需要也不应该去要求和依赖展现的形式。
 > fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种要求。
 
+## 运行
+```bash
+#!/bin/csh
+
+# AMD Radeon Graphics
+startx
+
+# Intel Graphics
+# sudo /sbin/kldload i915kms && startx
+```
+
 ## 更新
 
 ### 更新 FreeBSD
