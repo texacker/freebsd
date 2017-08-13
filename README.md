@@ -5,9 +5,9 @@
 ```bash
 #!/bin/csh
 
-portinstall ports-mgmt/pkg
+make -C /usr/ports/ports-mgmt/pkg build install clean
+make -C /usr/ports/ports-mgmt/portupgrade build install clean
 portinstall ports-mgmt/portmaster
-portinstall ports-mgmt/portupgrade
 portinstall ports-mgmt/pkg_cleanup
 ```
 
