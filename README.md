@@ -48,7 +48,7 @@ portinstall ports-mgmt/pkg_cleanup
 startx
 
 # Intel Graphics
-# In some cases, after loading KMS driver, the system console is blank, even though the system is still working.
+# In some cases, after loading KMS driver, the system console is blank, even though it is still working.
 # sudo /sbin/kldload i915kms && startx
 ```
 
