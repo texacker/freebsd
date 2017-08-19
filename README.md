@@ -78,7 +78,7 @@ startx
 #   https://www.freebsd.org/releng/
 #   https://svnweb.freebsd.org/
 
-# first time:
+# The first time :
 # ( cd /usr ; rm -fr ./src )
 # ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
 
@@ -97,6 +97,10 @@ startx
 # The first time portsnap is executed, use fetch and extract to install the downloaded files:
 # /usr/sbin/portsnap fetch extract
 /usr/sbin/portsnap fetch update
+
+# or using svn :
+# ( cd /usr ; rm -fr ./ports )
+# ( mkdir -p /usr/ports ; /usr/bin/svnlite co https://svn.freebsd.org/ports/head /usr/ports )
 
 ( cd /usr/ports; make index )
 # or fetch INDEX instead of building it from ports tree
