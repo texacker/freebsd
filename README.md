@@ -73,7 +73,10 @@ startx
 #!/bin/csh
 
 # Updating the Source
-# See https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
+# See :
+#   https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
+#   https://www.freebsd.org/releng/
+#   https://svnweb.freebsd.org/
 
 # first time:
 # ( cd /usr ; rm -fr ./src )
