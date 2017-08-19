@@ -99,8 +99,9 @@ startx
 /usr/sbin/portsnap fetch update
 
 # or using svn :
-# ( cd /usr ; rm -fr ./ports )
-# ( mkdir -p /usr/ports ; /usr/bin/svnlite co https://svn.freebsd.org/ports/head /usr/ports )
+# # ( cd /usr ; rm -fr ./ports )
+# # ( mkdir -p /usr/ports ; /usr/bin/svnlite co https://svn.freebsd.org/ports/head /usr/ports )
+# /usr/bin/svnlite up /usr/ports
 
 ( cd /usr/ports; make index )
 # or fetch INDEX instead of building it from ports tree
