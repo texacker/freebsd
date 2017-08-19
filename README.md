@@ -74,6 +74,11 @@ startx
 
 # Updating the Source
 # See https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
+
+# first time:
+# ( cd /usr ; rm -fr ./src )
+# ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
+
 /usr/bin/svnlite up /usr/src
 
 # Please check /usr/src/UPDATING before updating.
