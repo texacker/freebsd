@@ -3,8 +3,6 @@
 ## 安装
 ### ports-mgmt
 ```bash
-#!/bin/csh
-
 make -C /usr/ports/ports-mgmt/pkg build install clean
 make -C /usr/ports/ports-mgmt/portupgrade build install clean
 
@@ -13,16 +11,20 @@ portinstall ports-mgmt/pkg_cleanup
 ```
 
 ### xorg
-    portinstall x11/xorg
-    portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
-    portinstall x11/tint devel/py-xdg
-    portinstall chinese/ibus-libpinyin lang/python3
+```bash
+portinstall x11/xorg
+portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
+portinstall x11/tint devel/py-xdg
+portinstall chinese/ibus-libpinyin lang/python3
+```
 
 ### Desktop Utilities
-    portinstall devel/geany
-    portinstall x11-fm/xfe
-    portinstall graphics/mupdf
-    portinstall www/firefox
+```bash
+portinstall devel/geany
+portinstall x11-fm/xfe
+portinstall graphics/mupdf
+portinstall www/firefox
+```
 
 ## 配置
 ### xterm
