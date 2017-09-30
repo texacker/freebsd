@@ -45,6 +45,9 @@ portinstall www/firefox
 > fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种要求？
 
 ## 运行 xorg
+    ~/.Xresources
+    ~/.xinitrc
+
 ```bash
 #!/bin/csh
 
