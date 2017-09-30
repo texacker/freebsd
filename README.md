@@ -44,10 +44,12 @@ portinstall www/firefox
 > 而应用程序不需要也不应该去要求和依赖类似于使用哪个字体这样的具体的展现形式。
 > fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种要求？
 
-## 运行 xorg
+## 配置 xorg
     ~/.Xresources
+    ~/.Xresources.d
     ~/.xinitrc
 
+## 运行 xorg
 ```bash
 #!/bin/csh
 
