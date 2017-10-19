@@ -89,6 +89,9 @@ startx
 # ( cd /usr ; rm -fr ./src )
 # ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
 
+# Switch to a different branch :
+# /usr/bin/svnlite switch ^/releng/11.1 /usr/src
+
 /usr/bin/svnlite up /usr/src
 
 # Please check /usr/src/UPDATING before updating.
