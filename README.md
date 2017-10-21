@@ -141,8 +141,6 @@ startx
    1. Back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
    1. Manually check /usr/local and /var/db/pkg to make sure that they are really empty
 1. Reinstall all ports
-   1. Install ports-mgmt/pkg and then ports-mgmt/portmaster. Remove both from ~/installed-port-list.
-   1. portmaster --no-confirm `cat ~/installed-port-list`
 
 ### [Updating FreeBSD from Source](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html)
 ```bash
