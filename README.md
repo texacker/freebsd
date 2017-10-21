@@ -145,3 +145,10 @@ startx
    1. portmaster --no-confirm `cat ~/installed-port-list`
 
 ### [Updating FreeBSD from Source](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html)
+```bash
+#!/bin/csh
+
+make -C /usr/src cleanworld
+make -C /usr/src -j4 buildworld
+make -C /usr/src -j4 kernel
+```
