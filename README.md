@@ -130,15 +130,18 @@ startx
 ```
 
 ### Complete Reinstallation of All Ports
-1. portmaster --list-origins > ~/installed-port-list
-1. Update the ports tree
-1. portmaster -ty --clean-distfiles
-1. portmaster -Faf
-1. pkg delete -afy
-1. rm -rf /usr/local/lib/compat/pkg
-1. Back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
-1. Manually check /usr/local and /var/db/pkg to make sure that they are really empty
-1. Install ports-mgmt/pkg and then ports-mgmt/portmaster. Remove both from ~/installed-port-list.
-1. portmaster --no-confirm `cat ~/installed-port-list`
+1. Update and delete all ports
+   1. portmaster --list-origins > ~/installed-port-list
+   1. Update the ports tree
+   1. portmaster -ty --clean-distfiles
+   1. portmaster -Faf
+   1. pkg delete -afy
+1. Clean
+   1. rm -rf /usr/local/lib/compat/pkg
+   1. Back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
+   1. Manually check /usr/local and /var/db/pkg to make sure that they are really empty
+1. Reinstall all ports
+   1. Install ports-mgmt/pkg and then ports-mgmt/portmaster. Remove both from ~/installed-port-list.
+   1. portmaster --no-confirm `cat ~/installed-port-list`
 
 ### [Updating FreeBSD from Source](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html)
