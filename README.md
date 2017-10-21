@@ -151,4 +151,28 @@ startx
 make -C /usr/src cleanworld
 make -C /usr/src -j4 buildworld
 make -C /usr/src -j4 kernel
+echo ready to reboot...
+
+# Log in as single user mode:
+
+# If the system is formatted with UFS:
+# fsck -p
+# mount -u /
+# mount -a -t ufs
+# swapon -a
+
+# If the system is instead formatted with ZFS:
+# zfs set readonly=off zroot
+# zfs mount -a
+
+# Adjust the local time CMOS clock:
+# adjkerntz -i
+
+# Install World:
+# mergemaster -p
+# make -C /usr/src installworld
+# mergemaster -FUi
+# yes | make -C /usr/src delete-old
+
+# reboot again
 ```
