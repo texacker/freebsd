@@ -129,7 +129,7 @@ startx
 # Please check /usr/ports/UPDATING before updating.
 ```
 
-### [重装所有 Port](https://www.freebsd.org/cgi/man.cgi?query=portmaster&apropos=0&sektion=8&manpath=FreeBSD+11.1-RELEASE+and+Ports&arch=default&format=html)
+### [重装 Ports](https://www.freebsd.org/cgi/man.cgi?query=portmaster&apropos=0&sektion=8&manpath=FreeBSD+11.1-RELEASE+and+Ports&arch=default&format=html)
 1. Update and delete all ports
    1. portmaster --list-origins > ~/installed-port-list
    1. _Update the ports tree_
