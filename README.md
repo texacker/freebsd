@@ -142,7 +142,7 @@ startx
    1. _Manually check /usr/local and /var/db/pkg to make sure that they are really empty_
 1. Reinstall all ports
 
-### 升级系统
+### 更新 FreeBSD
 ```bash
 #!/bin/csh
 
