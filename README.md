@@ -132,14 +132,14 @@ startx
 ### [Complete Reinstallation of All Ports](https://www.freebsd.org/cgi/man.cgi?query=portmaster&apropos=0&sektion=8&manpath=FreeBSD+11.1-RELEASE+and+Ports&arch=default&format=html)
 1. Update and delete all ports
    1. portmaster --list-origins > ~/installed-port-list
-   1. Update the ports tree
+   1. _Update the ports tree_
    1. portmaster -ty --clean-distfiles
    1. portmaster -Faf
    1. pkg delete -afy
 1. Clean
    1. rm -rf /usr/local/lib/compat/pkg
-   1. Back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
-   1. Manually check /usr/local and /var/db/pkg to make sure that they are really empty
+   1. _Back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc_
+   1. _Manually check /usr/local and /var/db/pkg to make sure that they are really empty_
 1. Reinstall all ports
 
 ### [Updating FreeBSD from Source](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html)
