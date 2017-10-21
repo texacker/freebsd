@@ -142,9 +142,11 @@ startx
    1. _Manually check /usr/local and /var/db/pkg to make sure that they are really empty_
 1. Reinstall all ports
 
-### [升级系统](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html)
+### 升级系统
 ```bash
 #!/bin/csh
+
+# See: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html
 
 make -C /usr/src cleanworld
 make -C /usr/src -j4 buildworld
