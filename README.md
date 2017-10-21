@@ -8,6 +8,7 @@ make -C /usr/ports/ports-mgmt/portupgrade build install clean
 
 portinstall ports-mgmt/portmaster
 portinstall ports-mgmt/pkg_cleanup
+portinstall security/ca_root_nss
 ```
 
 ### xorg
