@@ -2,11 +2,6 @@
 
 ## 安装
 
-### Root Certificate
-```bash
-portinstall security/ca_root_nss
-```
-
 ### ports-mgmt
 ```bash
 make -C /usr/ports/ports-mgmt/pkg build install clean
@@ -14,6 +9,11 @@ make -C /usr/ports/ports-mgmt/portupgrade build install clean
 
 portinstall ports-mgmt/portmaster
 portinstall ports-mgmt/pkg_cleanup
+```
+
+### Root Certificate
+```bash
+portinstall security/ca_root_nss
 ```
 
 ### xorg
