@@ -80,7 +80,7 @@ startx
 /usr/sbin/freebsd-update install
 ```
 
-### 更新 src
+### 更新 src tree
 
 ```bash
 #!/bin/csh
