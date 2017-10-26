@@ -138,21 +138,21 @@ startx
 ```bash
 #!/bin/csh
 
-# 保留安装记录
+# 1. 保留安装记录
 portmaster --list-origins > ~/installed-port-list
 
-# Update and delete all ports
+# 2. Update and delete all ports
 # update the ports tree
 portmaster -ty --clean-distfiles
 portmaster -Faf
 pkg delete -afy
 
-# 清理
+# 3. 清理
 rm -rf /usr/local/lib/compat/pkg
 # back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
 # manually check /usr/local and /var/db/pkg to make sure that they are really empty
 
-# Reinstall all ports
+# 4. Reinstall all ports
 ```
 
 ### 更新 FreeBSD
