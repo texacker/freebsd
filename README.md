@@ -69,17 +69,6 @@ startx
 
 ## 更新
 
-### 更新 FreeBSD
-
-```bash
-#!/bin/csh
-
-# FreeBSD Update
-# See http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html
-/usr/sbin/freebsd-update fetch
-/usr/sbin/freebsd-update install
-```
-
 ### 更新 src tree
 
 ```bash
@@ -188,4 +177,15 @@ echo ready to reboot...
 # yes | make -C /usr/src delete-old
 
 # reboot again
+```
+
+### 更新 FreeBSD
+
+```bash
+#!/bin/csh
+
+# FreeBSD Update
+# See http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html
+/usr/sbin/freebsd-update fetch
+/usr/sbin/freebsd-update install
 ```
