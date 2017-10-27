@@ -11,11 +11,6 @@ portinstall ports-mgmt/portmaster
 portinstall ports-mgmt/pkg_cleanup
 ```
 
-### Root Certificate
-```bash
-portinstall security/ca_root_nss
-```
-
 ### xorg
 ```bash
 portinstall x11/xorg
@@ -30,6 +25,11 @@ portinstall devel/geany
 portinstall x11-fm/xfe
 portinstall graphics/mupdf
 portinstall www/firefox
+```
+
+### Root Certificate
+```bash
+portinstall security/ca_root_nss
 ```
 
 ## 配置
