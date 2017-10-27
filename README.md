@@ -69,29 +69,6 @@ startx
 
 ## 更新
 
-### 更新 src tree
-
-```bash
-#!/bin/csh
-
-# Updating the Source
-# See :
-#   https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
-#   https://www.freebsd.org/releng/
-#   https://svnweb.freebsd.org/
-
-# The first time :
-# ( cd /usr ; rm -fr ./src )
-# ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
-
-# Switch to a different branch :
-# /usr/bin/svnlite switch ^/releng/11.1 /usr/src
-
-/usr/bin/svnlite up /usr/src
-
-# Please check /usr/src/UPDATING before updating.
-```
-
 ### 更新 ports tree
 
 ```bash
@@ -142,6 +119,29 @@ rm -rf /usr/local/lib/compat/pkg
 # manually check /usr/local and /var/db/pkg to make sure that they are really empty
 
 # 4. Reinstall all ports
+```
+
+### 更新 src tree
+
+```bash
+#!/bin/csh
+
+# Updating the Source
+# See :
+#   https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
+#   https://www.freebsd.org/releng/
+#   https://svnweb.freebsd.org/
+
+# The first time :
+# ( cd /usr ; rm -fr ./src )
+# ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
+
+# Switch to a different branch :
+# /usr/bin/svnlite switch ^/releng/11.1 /usr/src
+
+/usr/bin/svnlite up /usr/src
+
+# Please check /usr/src/UPDATING before updating.
 ```
 
 ### 更新 FreeBSD
