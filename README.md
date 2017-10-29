@@ -100,7 +100,7 @@ startx
 # Please check /usr/ports/UPDATING before updating.
 ```
 
-### [重装 Ports](https://www.freebsd.org/cgi/man.cgi?query=portmaster&apropos=0&sektion=8&manpath=FreeBSD+11.1-RELEASE+and+Ports&arch=default&format=html)
+### [重装 Ports](https://www.freebsd.org/cgi/man.cgi?query=portmaster&apropos=0&sektion=0&manpath=FreeBSD+11.1-RELEASE+and+Ports&arch=default&format=html#end)
 ```bash
 #!/bin/csh
 
