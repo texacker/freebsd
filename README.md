@@ -16,7 +16,7 @@ portinstall ports-mgmt/pkg-rmleaf
 portinstall x11/xorg
 portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
 portinstall x11/tint devel/py-xdg
-portinstall chinese/ibus-libpinyin lang/python3
+portinstall chinese/ibus-libpinyin
 ```
 
 ### Desktop Utilities
