@@ -63,8 +63,15 @@ portinstall security/ca_root_nss
 startx
 
 # Intel Graphics
+#
 # In some cases, after loading KMS driver, the system console is blank, even though it is still working.
 # sudo /sbin/kldload i915kms && startx
+#
+# If you want to automatically load intel video driver at boot time,
+# we recommend to do it from /etc/rc.conf:
+# kld_list="i915kms"
+# Loading the driver from /boot/loader.conf is not recommended and may not even work.
+# Loading i915kms like this is known to cause a hang early in boot with a black screen.
 ```
 
 ## 更新
