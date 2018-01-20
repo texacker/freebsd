@@ -198,6 +198,22 @@ echo ready to reboot...
 /usr/sbin/freebsd-update install
 ```
 
-##  References
+## Ports Management
+
+```bash
+#!/bin/csh
+
+# 1. List all root and leaf ports
+portmaster --list-origins
+
+# 2. Remove leaf packages
+pkg-rmleaf
+
+# 3. Upgrade installed packages, and all those packages depending on the given
+#    packages as well, even if it is just a reinstall of the same version
+portupgrade -fr <package>
+```
+
+## References
 1. [FreeBSD Handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/).
 1. [FreeBSD 简明用户指南](http://bsdelf.github.io/posts/freebsd-brief-user-guide).
