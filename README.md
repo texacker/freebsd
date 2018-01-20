@@ -211,7 +211,7 @@ pkg-rmleaf
 
 # 3. Upgrade installed packages, and all those packages depending on the given
 #    packages as well, even if it is just a reinstall of the same version
-portupgrade -fr <package>
+portupgrade -fr <pkgname_glob>
 ```
 
 ## References
