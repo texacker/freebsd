@@ -2,7 +2,7 @@
 
 ## 安装
 
-### [Download media](https://www.freebsd.org/where.html) and [write image file to USB](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall-pre.html#bsdinstall-usb)
+### [Download media](https://www.freebsd.org/where.html) and [write image to USB](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall-pre.html#bsdinstall-usb)
 ```bash
 wget https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-mini-memstick.img.xz
 unxz FreeBSD-11.1-RELEASE-amd64-mini-memstick.img.xz
