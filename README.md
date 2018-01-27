@@ -226,3 +226,10 @@ portupgrade -fr <pkgname_glob>
 ## References
 1. [FreeBSD Handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/).
 1. [FreeBSD 简明用户指南](http://bsdelf.github.io/posts/freebsd-brief-user-guide).
+
+## OS for A Computer Scientist
+
+OS      | compile from source | not over-encapsulation
+------- | ------------------- | ----------------------
+FreeBSD | x                   | x
+Debian  |                     |
