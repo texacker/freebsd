@@ -229,7 +229,7 @@ portupgrade -fr <pkgname_glob>
 
 ## OS for A Computer Scientist
 
-OS      | compile from source | not over-encapsulation
-------- | ------------------- | ----------------------
+OS      | compile from source | no over-encapsulation
+------- | ------------------- | ---------------------
 FreeBSD | x                   | x
 Debian  |                     |
