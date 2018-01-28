@@ -2,13 +2,18 @@
 
 ## 安装
 
-### [Download media](https://www.freebsd.org/where.html) and [write image to USB](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall-pre.html#bsdinstall-usb)
+### [Download](https://www.freebsd.org/where.html) media and [write](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall-pre.html#bsdinstall-usb) image to USB
 ```bash
 wget https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/11.1/FreeBSD-11.1-RELEASE-amd64-mini-memstick.img.xz
 wget https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/11.1/CHECKSUM.SHA256-FreeBSD-11.1-RELEASE-amd64
 unxz FreeBSD-11.1-RELEASE-amd64-mini-memstick.img.xz
 shasum -a 256 -c CHECKSUM.SHA256-FreeBSD-11.1-RELEASE-amd64
 dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
+```
+
+### Install Ports Collection
+```bash
+( /usr/sbin/portsnap fetch extract ; cd /usr/ports ; make index )
 ```
 
 ### ports-mgmt
