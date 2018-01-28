@@ -16,6 +16,11 @@ dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
 ( /usr/sbin/portsnap fetch extract ; cd /usr/ports ; make index )
 ```
 
+### System-Wide Configuration
+    /boot/loader.conf
+    /etc/rc.conf
+    /etc/make.conf
+
 ### ports-mgmt
 ```bash
 make -C /usr/ports/ports-mgmt/pkg build install clean
