@@ -1,6 +1,6 @@
 # FreeBSD 使用笔记
 
-## 安装
+## 安装 FreeBSD Base
 
 ### [Download](https://www.freebsd.org/where.html) media and [write](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall-pre.html#bsdinstall-usb) image to USB
 ```bash
@@ -20,6 +20,8 @@ dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
 ```bash
 ( /usr/sbin/portsnap fetch extract ; cd /usr/ports ; make index )
 ```
+
+## 安装 Packages
 
 ### ports-mgmt
 ```bash
