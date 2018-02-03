@@ -1,0 +1,21 @@
+# cat /usr/ports/Mk/bsd.options.desc.mk | sort
+
+OPTIONS_UNSET+=CUPS                   # CUPS printing system support
+OPTIONS_UNSET+=DEBUG                  # Build with debugging support
+OPTIONS_UNSET+=DOCS                   # Build and/or install documentation
+OPTIONS_UNSET+=EXAMPLES               # Build and/or install examples
+OPTIONS_UNSET+=GHOSTSCRIPT            # Ghostscript support
+OPTIONS_UNSET+=GTK1                   # GTK+ 1 GUI toolkit support
+OPTIONS_UNSET+=GUI                    # GUI (Graphical User Interface) support
+OPTIONS_UNSET+=IPV6                   # IPv6 protocol support
+OPTIONS_UNSET+=KDE4                   # KDE 4 desktop environment support
+OPTIONS_UNSET+=LDAPS                  # LDAP protocol over SSL support
+OPTIONS_UNSET+=LDAP                   # LDAP protocol support
+OPTIONS_UNSET+=MYSQL                  # MySQL database support
+OPTIONS_UNSET+=NLS                    # Native Language Support
+OPTIONS_UNSET+=PGO                    # Use Profile-Guided Optimization
+OPTIONS_UNSET+=PROFILE                # Build with profiling support
+OPTIONS_UNSET+=PULSEAUDIO             # PulseAudio sound server support
+OPTIONS_UNSET+=QT4                    # Qt 4 toolkit support
+OPTIONS_UNSET+=QT5                    # Qt 5 toolkit support
+#OPTIONS_UNSET+=X11                   # X11 (graphics) support

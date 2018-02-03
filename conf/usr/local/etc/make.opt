@@ -1,0 +1,41 @@
+.include "/usr/local/etc/make.opt.global"
+.include "/usr/local/etc/make.opt.ghostscript"
+.include "/usr/local/etc/make.opt.haskell"
+.include "/usr/local/etc/make.opt.xorg"
+
+print_freetype2_SET+=LCD_FILTERING
+devel_git_SET+=SVN
+devel_git_UNSET+=CVS
+
+# otherwise `make index` will fail.
+comms_gqrx_SET+=QT5
+editors_texmaker_SET+=QT5
+editors_texstudio_SET+=QT5
+graphics_qtawesome_SET+=QT5
+net_quiterss_SET+=QT5
+print_qpdfview_SET+=QT5
+
+# lang_ocaml_UNSET+=X11
+# devel_ocaml-findlib_UNSET+=TOOLBOX
+# lang_ghc_UNSET+=DOCS
+math_coq_UNSET+=IDE
+# emulators_wine_UNSET+=X11
+
+net_samba4_UNSET+=SWAT
+# editors_emacs_UNSET+=XFT M17N OTF
+# editors_emacs_UNSET+=X11 GTK2 GTK3 XAW XAW3D MOTIF
+editors_emacs_UNSET+=GIF JPEG MAGICK PNG SVG TIFF XPM
+editors_emacs_UNSET+=SOUND ALSA OSS
+editors_vim_SET+=CONSOLE
+editors_vim_UNSET+=ATHENA GNOME GTK2 MOTIF X11
+
+# misc_mc_SET+=NCURSES
+# misc_mc_UNSET+=EDITOR SFTP SMB SUBSHELL X11 SLANG
+
+www_firefox_UNSET+=DTRACE FFMPEG RUST
+mail_thunderbird_UNSET+=CANBERRA DTRACE FFMPEG LIGHTNING
+
+x11_tint_SET+=EXAMPLES
+# x11-fonts_fontconfig_UNSET+=HINTING_NONE HINTING_SLIGHT HINTING_MEDIUM
+# x11-fonts_fontconfig_SET+=HINTING_FULL
+

@@ -1,0 +1,62 @@
+# Enable libdrm for FreeBSD Intel KMS support
+#graphics_libdrm_SET+=KMS
+
+# xorg-minimal only :
+#VIDEO_DRIVER=ati
+#VIDEO_DRIVER=nvidia
+# After installation or updating of xorg-minimal, run :
+# portupgrade -o x11/nvidia-driver-173 -f x11/nvidia-driver
+# portupgrade -fr x11/nvidia-driver-173
+
+x11_nvidia-driver_UNSET+=LINUX
+
+# Only build xorg with mouse, keyboard
+# make -C /usr/ports/x11-drivers/xorg-drivers showconfig | grep "=on:"
+x11-drivers_xorg-drivers_UNSET+=ACECAD         # Install acecad input driver
+x11-drivers_xorg-drivers_UNSET+=AMDGPU         # Install amdgpu video driver
+x11-drivers_xorg-drivers_UNSET+=APM            # Install apm video driver
+x11-drivers_xorg-drivers_UNSET+=ARK            # Install ark video driver
+x11-drivers_xorg-drivers_UNSET+=AST            # Install ast video driver
+x11-drivers_xorg-drivers_SET+=ATI              # Install ati (radeon) video driver
+x11-drivers_xorg-drivers_UNSET+=CHIPS          # Install chips video driver
+x11-drivers_xorg-drivers_UNSET+=CIRRUS         # Install cirrus video driver
+x11-drivers_xorg-drivers_UNSET+=DUMMY          # Install dummy video driver
+x11-drivers_xorg-drivers_UNSET+=EGALAX         # Install egalax input driver
+x11-drivers_xorg-drivers_UNSET+=ELOGRAPHICS    # Install elographics input driver
+x11-drivers_xorg-drivers_UNSET+=EVDEV          # Install evdev input driver
+x11-drivers_xorg-drivers_UNSET+=FPIT           # Install fpit input driver
+x11-drivers_xorg-drivers_UNSET+=GLINT          # Install glint video driver
+x11-drivers_xorg-drivers_UNSET+=HYPERPEN       # Install hyperpen input driver
+x11-drivers_xorg-drivers_UNSET+=I128           # Install i128 video driver
+x11-drivers_xorg-drivers_UNSET+=I740           # Install i740 video driver
+x11-drivers_xorg-drivers_UNSET+=INTEL          # Install intel video driver
+x11-drivers_xorg-drivers_UNSET+=JOYSTICK       # Install joystick input driver
+x11-drivers_xorg-drivers_SET+=KEYBOARD         # Install keyboard input driver
+x11-drivers_xorg-drivers_UNSET+=LIBINPUT       # Install libinput input driver
+x11-drivers_xorg-drivers_UNSET+=MACH64         # Install mach64 video driver
+x11-drivers_xorg-drivers_UNSET+=MGA            # Install mga video driver
+x11-drivers_xorg-drivers_SET+=MOUSE            # Install mouse input driver
+x11-drivers_xorg-drivers_UNSET+=MUTOUCH        # Install mutouch input driver
+x11-drivers_xorg-drivers_UNSET+=NEOMAGIC       # Install neomagic video driver
+x11-drivers_xorg-drivers_UNSET+=NV             # Install nv video driver
+x11-drivers_xorg-drivers_UNSET+=OPENCHROME     # Install openchrome video driver
+x11-drivers_xorg-drivers_UNSET+=PENMOUNT       # Install penmount input driver
+x11-drivers_xorg-drivers_UNSET+=R128           # Install r128 video driver
+x11-drivers_xorg-drivers_UNSET+=RENDITION      # Install rendition video driver
+x11-drivers_xorg-drivers_UNSET+=S3             # Install s3 video driver
+x11-drivers_xorg-drivers_UNSET+=S3VIRGE        # Install s3virge video driver
+x11-drivers_xorg-drivers_UNSET+=SAVAGE         # Install savage video driver
+x11-drivers_xorg-drivers_UNSET+=SCFB           # Install scfb video driver
+x11-drivers_xorg-drivers_UNSET+=SILICONMOTION  # Install siliconmotion video driver
+x11-drivers_xorg-drivers_UNSET+=SIS            # Install sis video driver
+x11-drivers_xorg-drivers_UNSET+=SYNAPTICS      # Install synaptics input driver
+x11-drivers_xorg-drivers_UNSET+=TDFX           # Install tdfx video driver
+x11-drivers_xorg-drivers_UNSET+=TRIDENT        # Install trident video driver
+x11-drivers_xorg-drivers_UNSET+=TSENG          # Install tseng video driver
+x11-drivers_xorg-drivers_UNSET+=VESA           # Install vesa video driver
+x11-drivers_xorg-drivers_UNSET+=VMMOUSE        # Install vmmouse input driver
+x11-drivers_xorg-drivers_UNSET+=VMWARE         # Install vmware video driver
+x11-drivers_xorg-drivers_UNSET+=VOID           # Install void input driver
+x11-drivers_xorg-drivers_UNSET+=VOODOO         # Install voodoo video driver
+x11-drivers_xorg-drivers_UNSET+=WACOM          # Install wacom input driver
+

@@ -1,0 +1,14 @@
+# lang_ghc_SET+=DOCS
+
+# www_hs-HTTP_SET+=DOCS HSCOLOUR
+# devel_hs-QuickCheck_SET+=DOCS HSCOLOUR
+# devel_hs-alex_SET+=DOCS HSCOLOUR
+# devel_hs-cabal-install_SET+=DOCS HSCOLOUR
+# devel_hs-happy_SET+=DOCS HSCOLOUR
+# devel_hs-mtl_SET+=DOCS HSCOLOUR
+# net_hs-network_SET+=DOCS HSCOLOUR
+# textproc_hs-parsec_SET+=DOCS HSCOLOUR
+# devel_hs-random_SET+=DOCS HSCOLOUR
+# devel_hs-stm_SET+=DOCS HSCOLOUR
+# devel_hs-text_SET+=DOCS HSCOLOUR
+# archivers_hs-zlib_SET+=DOCS HSCOLOUR
