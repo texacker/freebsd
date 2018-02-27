@@ -1,0 +1,23 @@
+# From
+# https://developer.gnome.org/gtk-tutorial/stable/x2136.html
+# http://www.gtk.org/tutorial1.2/gtk_tut-21.html
+
+# style <name> [= <name>]
+# {
+#   <option>
+# }
+#
+# widget <widget_set> style <style_name>
+# widget_class <widget_class_set> style <style_name>
+
+style "default"
+{
+  base[NORMAL] = "#D4D0C8"
+  base[ACTIVE] = "#D4D0C8"
+}
+
+# widget_class "*" style "default"
+class "GtkWidget" style "default"
+#class "FmMainWin.*.FmTabPage" style "default"
+#class "*Entry*" style "default"
+
