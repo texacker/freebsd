@@ -8,7 +8,7 @@
 #export GTK3_IM_MODULE=xim
 #exec /usr/local/bin/fcitx &
 
-## XIM: ibus
+## XIM: ibus, see https://github.com/ibus/ibus/wiki/ReadMe
 export GTK_IM_MODULE=ibus
 export GTK3_IM_MODULE=xim
 export QT_IM_MODULE=ibus
