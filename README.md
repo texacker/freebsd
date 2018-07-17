@@ -220,6 +220,12 @@ echo ready to reboot...
 /usr/sbin/freebsd-update install
 ```
 
+### 截屏
+```bash
+portinstall graphics/scrot
+( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
+```
+
 ## Ports Management
 
 ```bash
