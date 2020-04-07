@@ -71,7 +71,7 @@ portinstall security/ca_root_nss
 > 并依据用户的个人审美和需要以一个一致的方式展现出来（例如整个桌面环境都统一使用新宋体或者 Noto 字体），
 > 而应用程序不需要也不应该去要求和依赖类似于使用哪个字体这样的具体的展现形式。
 >
-> 但是令人费解的是 fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种要求？
+> 但是令人费解的是 fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种错误要求？
 
 ### 配置 xorg
     ~/.Xresources
@@ -168,7 +168,7 @@ rm -rf /usr/local/lib/compat/pkg
 # ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
 
 # Switch to a different branch :
-# /usr/bin/svnlite switch ^/releng/11.1 /usr/src
+# /usr/bin/svnlite switch ^/releng/12.1 /usr/src
 
 /usr/bin/svnlite up /usr/src
 
