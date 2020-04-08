@@ -261,17 +261,20 @@ portinstall graphics/scrot
 ```bash
 #!/bin/csh
 
-# 1. List all root and leaf ports
+# 1. List all installed ports by category
+portmaster -L
+
+# 2. List all root and leaf ports
 portmaster --list-origins
 
-# 2. Remove leaf packages
+# 3. Remove leaf packages
 pkg-rmleaf
 
-# 3. Upgrade installed packages, and all those packages depending on the given
+# 4. Upgrade installed packages, and all those packages depending on the given
 #    packages as well, even if it is just a reinstall of the same version
 portupgrade -fr <pkgname_glob>
 
-# 4. Only fetch recursively
+# 5. Only fetch recursively
 portinstall -FR <pkgname_glob>
 ```
 
