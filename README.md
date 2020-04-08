@@ -230,7 +230,7 @@ shutdown -r now
 # make -C /usr/src check-old
 make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old
 
-# make -C /usr/srccheck-old-libs
+# make -C /usr/src check-old-libs
 make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
 
 # The CMOS clock keeps local time, rather than keeps UTC time.
