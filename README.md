@@ -270,6 +270,9 @@ pkg-rmleaf
 # 3. Upgrade installed packages, and all those packages depending on the given
 #    packages as well, even if it is just a reinstall of the same version
 portupgrade -fr <pkgname_glob>
+
+# 4. Only fetch recursively
+portinstall -FR <pkgname_glob>
 ```
 
 ## References
