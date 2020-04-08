@@ -136,7 +136,7 @@ startx
 #!/bin/csh
 
 # 1. 保留安装记录
-portmaster --list-origins > ~/installed-port-list
+pkg autoremove && portmaster --list-origins | sort > ~/installed-port-list
 
 # 2. Update and delete all ports
 # update the ports tree
