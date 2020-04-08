@@ -135,11 +135,12 @@ startx
 ```bash
 #!/bin/csh
 
+# Update the ports tree
+
 # 1. 保留安装记录
 pkg autoremove && portmaster --list-origins | sort > ~/installed-port-list
 
 # 2. Update and delete all ports
-# update the ports tree
 portmaster -ty --clean-distfiles
 portmaster -Faf
 pkg delete -afy
