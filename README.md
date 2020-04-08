@@ -211,6 +211,36 @@ echo ready to reboot...
 ```
 
 ### 更新 FreeBSD
+```bash
+#!/bin/csh
+
+# See: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html
+
+make -C /usr/src cleanworld
+mergemaster -p
+
+make -C /usr/src buildworld
+make -C /usr/src kernel
+shutdown -r now
+
+make -C /usr/src installworld
+mergemaster -FUi
+shutdown -r now
+
+# make -C /usr/src check-old
+make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old
+
+# make -C /usr/srccheck-old-libs
+make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
+
+# The CMOS clock keeps local time, rather than keeps UTC time.
+touch /etc/wall_cmos_clock
+
+tzsetup
+ntpdate 0.pool.ntp.org
+```
+
+### 更新 FreeBSD
 
 ```bash
 #!/bin/csh
