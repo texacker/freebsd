@@ -18,7 +18,7 @@ dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
 
 ### Install Ports Collection
 ```bash
-( /usr/sbin/portsnap fetch extract ; cd /usr/ports ; make index )
+/usr/sbin/portsnap fetch extract && make -C /usr/ports index
 ```
 
 ## 安装 Packages
