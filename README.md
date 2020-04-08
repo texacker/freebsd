@@ -236,8 +236,7 @@ make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
 # The CMOS clock keeps local time, rather than keeps UTC time.
 touch /etc/wall_cmos_clock
 
-tzsetup
-ntpdate 0.pool.ntp.org
+tzsetup && ntpdate 0.pool.ntp.org
 ```
 
 ### 更新 FreeBSD
