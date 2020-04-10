@@ -234,7 +234,7 @@ make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old
 # make -C /usr/src check-old-libs
 make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
 
-# The CMOS clock keeps local time, rather than keeps UTC time.
+# The CMOS clock keeps local time, rather than UTC time.
 touch /etc/wall_cmos_clock
 
 tzsetup && ntpdate 0.pool.ntp.org
