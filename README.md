@@ -277,6 +277,9 @@ portupgrade -fr <pkgname_glob>
 
 # 5. Only fetch recursively
 portinstall -FR <pkgname_glob>
+
+# 6. portsnap: snapshot corrupt
+rm /var/db/portsnap/tag && portsnap fetch extract
 ```
 
 ## References
