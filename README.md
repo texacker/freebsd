@@ -228,6 +228,8 @@ mergemaster -p
 
 make -C /usr/src buildworld
 make -C /usr/src kernel
+
+# a complete cleaning of all ports, if desired.
 shutdown -r now
 
 make -C /usr/src installworld
