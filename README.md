@@ -146,14 +146,15 @@ portmaster -Faf
 pkg delete -afy
 
 # 3. 清理
-rm -rf /usr/local/lib/compat/pkg
+#
+# a. rm -rf /usr/local/lib/compat/pkg
 
-# BACK UP any files in /usr/local you wish to save, such as configuration files in :
-# /usr/local/etc
+# b. back up any files in /usr/local you wish to save, such as configuration files in :
+#    /usr/local/etc
 
-# manually check to make sure that they are really EMPTY :
-# /usr/local
-# /var/db/pkg
+# c. manually check to make sure that they are really EMPTY :
+#    /usr/local
+#    /var/db/pkg
 
 # 4. Reinstall all ports
 ```
