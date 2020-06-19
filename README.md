@@ -138,7 +138,7 @@ startx
 # Update the ports tree
 
 # 1. 保留安装记录
-pkg autoremove && portmaster --list-origins | sort > ~/installed-port-list
+pkg autoremove && portmaster --list-origins | sort > ~/.portmaster/installed-port-list
 
 # 2. Update and delete all ports
 portmaster -ty --clean-distfiles
