@@ -147,8 +147,13 @@ pkg delete -afy
 
 # 3. 清理
 rm -rf /usr/local/lib/compat/pkg
-# back up any files in /usr/local you wish to save, such as configuration files in /usr/local/etc
-# manually check /usr/local and /var/db/pkg to make sure that they are really empty
+
+# BACK UP any files in /usr/local you wish to save, such as configuration files in :
+# /usr/local/etc
+
+# manually check to make sure that they are really EMPTY :
+# /usr/local
+# /var/db/pkg
 
 # 4. Reinstall all ports
 ```
