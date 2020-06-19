@@ -226,8 +226,8 @@ echo ready to reboot...
 make -C /usr/src cleanworld
 mergemaster -p
 
-make -C /usr/src buildworld
-make -C /usr/src kernel
+make -j 4 -C /usr/src buildworld
+make -j 4 -C /usr/src kernel
 
 # a complete cleaning of all ports, if desired.
 shutdown -r now
