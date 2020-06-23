@@ -1,5 +1,5 @@
 
-## User_Alias ADMINS = furao
+## User_Alias ADMINS = root
 ## Cmnd_Alias REBOOT = /sbin/reboot
 ## Cmnd_Alias POWEROFF = /sbin/shutdown
 ## Cmnd_Alias PORTSADMIN = /usr/sbin/pkg, /usr/local/sbin/portinstall, /usr/local/sbin/portupgrade
