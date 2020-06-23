@@ -26,38 +26,38 @@ dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
 ### Preparation
 ```bash
 make -C /usr/ports/security/sudo fetch-recursive build install clean
-make -C /usr/ports/sysutils/tmux fetch-recursive build install clean
+sudo make -C /usr/ports/sysutils/tmux fetch-recursive build install clean
 ```
 
 ### ports-mgmt
 ```bash
-make -C /usr/ports/ports-mgmt/pkg build install clean
-make -C /usr/ports/ports-mgmt/portupgrade build install clean
+sudo make -C /usr/ports/ports-mgmt/pkg build install clean
+sudo make -C /usr/ports/ports-mgmt/portupgrade build install clean
 
-portinstall ports-mgmt/portmaster
-portinstall ports-mgmt/pkg-rmleaf
+sudo portinstall ports-mgmt/portmaster
+sudo portinstall ports-mgmt/pkg-rmleaf
 ```
 
 ### Root Certificate
 ```bash
-portinstall security/ca_root_nss
+sudo portinstall security/ca_root_nss
 ```
 
 ### xorg
 ```bash
-portinstall x11/xorg
-portinstall x11/xlockmore
-portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
-portinstall x11/tint devel/py-xdg
-portinstall chinese/ibus-libpinyin
+sudo portinstall x11/xorg
+sudo portinstall x11/xlockmore
+sudo portinstall x11-wm/obconf x11-wm/obmenu x11-themes/lxappearance
+sudo portinstall x11/tint devel/py-xdg
+sudo portinstall chinese/ibus-libpinyin
 ```
 
 ### Desktop Utilities
 ```bash
-portinstall devel/geany
-portinstall x11-fm/xfe
-portinstall graphics/mupdf
-portinstall www/firefox
+sudo portinstall devel/geany
+sudo portinstall x11-fm/xfe
+sudo portinstall graphics/mupdf
+sudo portinstall www/firefox
 ```
 
 ## 配置
@@ -229,29 +229,29 @@ echo ready to reboot...
 
 # See: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html
 
-make -C /usr/src cleanworld
-mergemaster -p
+sudo make -C /usr/src cleanworld
+sudo mergemaster -p
 
-make -j 4 -C /usr/src buildworld
-make -j 4 -C /usr/src kernel
+sudo make -j 4 -C /usr/src buildworld
+sudo make -j 4 -C /usr/src kernel
 
 # a complete cleaning of all ports, if desired.
-shutdown -r now
+sudo shutdown -r now
 
-make -C /usr/src installworld
-mergemaster -FUi
-shutdown -r now
+sudo make -C /usr/src installworld
+sudo mergemaster -FUi
+sudo shutdown -r now
 
 # make -C /usr/src check-old
-make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old
+sudo make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old
 
 # make -C /usr/src check-old-libs
-make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
+sudo make BATCH_DELETE_OLD_FILES=yes -C /usr/src delete-old-libs
 
 # The CMOS clock keeps local time, rather than UTC time.
-touch /etc/wall_cmos_clock
+sudo touch /etc/wall_cmos_clock
 
-tzsetup && ntpdate 0.pool.ntp.org
+sudo tzsetup && sudo ntpdate 0.pool.ntp.org
 ```
 
 ### 更新 FreeBSD
@@ -261,13 +261,13 @@ tzsetup && ntpdate 0.pool.ntp.org
 
 # FreeBSD Update
 # See http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/updating-upgrading-freebsdupdate.html
-/usr/sbin/freebsd-update fetch
-/usr/sbin/freebsd-update install
+sudo /usr/sbin/freebsd-update fetch
+sudo /usr/sbin/freebsd-update install
 ```
 
 ### 截屏
 ```bash
-portinstall graphics/scrot
+sudo portinstall graphics/scrot
 ( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
 ```
 
