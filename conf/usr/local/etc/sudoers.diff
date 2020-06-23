@@ -1,0 +1,12 @@
+
+## User_Alias ADMINS = furao
+## Cmnd_Alias REBOOT = /sbin/reboot
+## Cmnd_Alias POWEROFF = /sbin/shutdown
+## Cmnd_Alias PORTSADMIN = /usr/sbin/pkg, /usr/local/sbin/portinstall, /usr/local/sbin/portupgrade
+## Cmnd_Alias UPDATEADMIN = /root/bin/my_update_ports, /root/bin/my_update_src
+## Cmnd_Alias SERVICEADMIN = /usr/sbin/service, /bin/dd
+
+## ADMINS ALL=(ALL) ALL, NOPASSWD: REBOOT
+## ADMINS ALL = NOPASSWD:POWEROFF, NOPASSWD:PORTSADMIN, NOPASSWD:UPDATEADMIN, NOPASSWD:SERVICEADMIN, NOPASSWD:/root/bin/my_update
+
+freebsd ALL=(ALL) NOPASSWD: ALL
