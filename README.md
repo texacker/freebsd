@@ -23,6 +23,12 @@ dd if=FreeBSD-11.1-RELEASE-amd64-mini-memstick.img of=/dev/da0 bs=1M conv=sync
 
 ## 安装 Packages
 
+### Preparation
+```bash
+make -C /usr/ports/security/sudo fetch-recursive build install clean
+make -C /usr/ports/sysutils/tmux fetch-recursive build install clean
+```
+
 ### ports-mgmt
 ```bash
 make -C /usr/ports/ports-mgmt/pkg build install clean
