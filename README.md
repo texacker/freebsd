@@ -31,9 +31,9 @@ sudo make -C /usr/ports/sysutils/tmux fetch-recursive build install clean
 
 ### ports-mgmt
 ```bash
-sudo make -C /usr/ports/ports-mgmt/pkg build install clean
 sudo make -C /usr/ports/ports-mgmt/portupgrade build install clean
 
+sudo portinstall ports-mgmt/pkg
 sudo portinstall ports-mgmt/portmaster
 sudo portinstall ports-mgmt/pkg-rmleaf
 ```
