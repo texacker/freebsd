@@ -43,6 +43,13 @@ sudo portinstall ports-mgmt/pkg-rmleaf
 sudo portinstall security/ca_root_nss
 ```
 
+### CLI Utilities
+```bash
+sudo portinstall editors/vim-console
+sudo portinstall sysutils/htop
+sudo portinstall archivers/unrar
+```
+
 ### xorg
 ```bash
 sudo portinstall x11/xorg
