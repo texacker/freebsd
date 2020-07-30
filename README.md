@@ -169,7 +169,12 @@ pkg delete -afy
 #    /usr/local
 #    /var/db/pkg
 
-# 4. Reinstall all ports
+# 4. Reinstall :
+#    ports-mgmt/pkg
+#    ports-mgmt/portmaster
+
+#    reinstall others :
+#    portmaster --no-confirm `cat ~/.portmaster/installed-port-list`
 ```
 
 ### 更新 src tree
@@ -195,7 +200,7 @@ pkg delete -afy
 # Please check /usr/src/UPDATING before updating.
 ```
 
-### 更新 FreeBSD
+### 更新 FreeBSD（旧）
 ```bash
 #!/bin/csh
 
