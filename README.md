@@ -312,4 +312,4 @@ rm /var/db/portsnap/tag && portsnap fetch extract
 ## References
 1. [FreeBSD Handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/).
 1. [FreeBSD 简明用户指南](http://bsdelf.github.io/posts/freebsd-brief-user-guide).
-
+1. [使用 BSD 作为桌面系统](https://dieken.gitlab.io/posts/bsd-as-desktop-system/).
