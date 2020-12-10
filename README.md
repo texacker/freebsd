@@ -193,7 +193,7 @@ pkg delete -afy
 # ( mkdir -p /usr/src ; /usr/bin/svnlite co https://svn.freebsd.org/base/releng/10.3 /usr/src )
 
 # Switch to a different branch :
-# /usr/bin/svnlite switch ^/releng/12.1 /usr/src
+# /usr/bin/svnlite switch ^/releng/12.2 /usr/src
 
 /usr/bin/svnlite up /usr/src
 
