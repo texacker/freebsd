@@ -289,23 +289,26 @@ sudo portinstall graphics/scrot
 ```bash
 #!/bin/csh
 
-# 1. List all installed ports by category
+# 1. List all installed ports
+pkg info
+
+# 2. List all installed ports by category
 portmaster -L
 
-# 2. List all root and leaf ports
+# 3. List all root and leaf ports
 portmaster --list-origins
 
-# 3. Remove leaf packages
+# 4. Remove leaf packages
 pkg-rmleaf
 
-# 4. Upgrade installed packages, and all those packages depending on the given
+# 5. Upgrade installed packages, and all those packages depending on the given
 #    packages as well, even if it is just a reinstall of the same version
 portupgrade -fr <pkgname_glob>
 
-# 5. Only fetch recursively
+# 6. Only fetch recursively
 portinstall -FR <pkgname_glob>
 
-# 6. portsnap: snapshot corrupt
+# 7. portsnap: snapshot corrupt
 rm /var/db/portsnap/tag && portsnap fetch extract
 ```
 
