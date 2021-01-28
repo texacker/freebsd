@@ -86,7 +86,7 @@ sudo portinstall www/firefox
 >
 > 但是令人费解的是 fontconfig 的功能重点似乎是在帮助而不是屏蔽应用程序的这种错误要求？
 >
-> 参考：[Font Configuration](https://wiki.archlinux.org/index.php/Font_configuration).
+> 参考：[Font Configuration](https://wiki.archlinux.org/index.php/Font_configuration)
 
 ### 配置 xorg
     ~/.Xresources
