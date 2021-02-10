@@ -280,20 +280,6 @@ sudo /usr/sbin/freebsd-update fetch
 sudo /usr/sbin/freebsd-update install
 ```
 
-### 截屏
-```bash
-sudo portinstall graphics/scrot
-( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
-```
-
-### ImageMagick - Command-line Tools: Convert
-```bash
-# See: https://imagemagick.org/script/convert.php
-#      https://legacy.imagemagick.org/Usage/
-
-sudo portinstall graphics/ImageMagick7-nox11
-```
-
 ## Ports Management
 
 ```bash
@@ -320,6 +306,22 @@ portinstall -FR <pkgname_glob>
 
 # 7. portsnap: snapshot corrupt
 rm /var/db/portsnap/tag && portsnap fetch extract
+```
+
+## Utilities
+
+### 截屏
+```bash
+sudo portinstall graphics/scrot
+( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
+```
+
+### ImageMagick - Command-line Tools: Convert
+```bash
+# See: https://imagemagick.org/script/convert.php
+#      https://legacy.imagemagick.org/Usage/
+
+sudo portinstall graphics/ImageMagick7-nox11
 ```
 
 ## References
