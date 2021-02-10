@@ -286,6 +286,14 @@ sudo portinstall graphics/scrot
 ( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
 ```
 
+### ImageMagick - Command-line Tools: Convert
+```bash
+# See: https://imagemagick.org/script/convert.php
+#      https://legacy.imagemagick.org/Usage/
+
+sudo portinstall graphics/ImageMagick7-nox11
+```
+
 ## Ports Management
 
 ```bash
