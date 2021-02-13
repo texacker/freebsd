@@ -243,18 +243,27 @@ echo ready to reboot...
 
 # See: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html
 
+# === Build ===
+
 sudo make -C /usr/src cleanworld
 sudo mergemaster -p
 
 sudo make -j 4 -C /usr/src buildworld
-sudo make -j 4 -C /usr/src kernel
+sudo make -j 4 -C /usr/src buildkernel
+
+# === Install ===
 
 # a complete cleaning of all ports, if desired.
+
+sudo make -j 4 -C /usr/src installkernel
 
 sudo shutdown -r now
 
 sudo make -C /usr/src installworld
 sudo mergemaster -FUi
+
+# === Restart ===
+
 sudo shutdown -r now
 
 # make -C /usr/src check-old
