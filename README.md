@@ -184,8 +184,10 @@ pkg delete -afy
 ```bash
 #!/bin/csh
 
-# Updating the Source
-# See :
+# Download the Latest Source Code
+#   https://riptutorial.com/freebsd/example/23734/download-the-latest-source-code
+
+# SVN
 #   https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/makeworld.html#updating-src-obtaining-src
 #   https://www.freebsd.org/releng/
 #   https://svnweb.freebsd.org/
