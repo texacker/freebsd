@@ -203,7 +203,7 @@ pkg delete -afy
 
 # TARBALL
 # wget http://ftp.freebsd.org/pub/FreeBSD/releases/amd64/12.2-RELEASE/src.txz
-# tar -Jxvf -C /usr/src src.txz
+# tar -C /usr/src -Jxvf src.txz
 
 # Please check /usr/src/UPDATING before updating.
 ```
