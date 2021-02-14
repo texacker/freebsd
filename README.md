@@ -261,7 +261,7 @@ sudo make -j 4 -C /usr/src buildkernel
 
 # a complete cleaning of all ports, if desired.
 
-sudo make -j 4 -C /usr/src installkernel
+sudo make -C /usr/src installkernel
 
 sudo shutdown -r now
 
