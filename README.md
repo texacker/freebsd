@@ -201,6 +201,10 @@ pkg delete -afy
 
 /usr/bin/svnlite up /usr/src
 
+# TARBALL
+# wget http://ftp.freebsd.org/pub/FreeBSD/releases/amd64/12.2-RELEASE/src.txz
+# tar -Jxvf -C /usr/src src.txz
+
 # Please check /usr/src/UPDATING before updating.
 ```
 
