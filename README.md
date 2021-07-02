@@ -320,6 +320,8 @@ portupgrade -fr <pkgname_glob>
 portinstall -FR <pkgname_glob>
 
 # 7. portsnap: snapshot corrupt
+#    /usr/sbin/portsnap: cannot open files/xxx.gz: No such file or directory
+#
 #rm /var/db/portsnap/tag && portsnap fetch extract
 sudo rm -fr /var/db/portsnap/* && sudo portsnap auto
 ```
