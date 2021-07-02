@@ -320,7 +320,8 @@ portupgrade -fr <pkgname_glob>
 portinstall -FR <pkgname_glob>
 
 # 7. portsnap: snapshot corrupt
-rm /var/db/portsnap/tag && portsnap fetch extract
+#rm /var/db/portsnap/tag && portsnap fetch extract
+sudo rm -fr /var/db/portsnap/* && sudo portsnap auto
 ```
 
 ## Utilities
