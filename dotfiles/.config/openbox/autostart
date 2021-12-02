@@ -17,4 +17,5 @@
 #xfce-mcs-manager &
 
 xsetroot -solid "#000066"
+#xsetroot -solid "#42689A"
 tint2 &
